@@ -1,6 +1,14 @@
-p.display {
+p {
   text-align: center;
   font-size: 150px;
+}
+
+p.black {
+  color: black;
+}
+
+p.red {
+  color: red;
 }
 
 div.button {

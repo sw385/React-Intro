@@ -8,7 +8,8 @@ class Decrement extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            count: props.count
+            count: props.count,
+            class: "black"
         };
 
         // this.decrement = this.decrement.bind(this);
@@ -16,24 +17,27 @@ class Decrement extends Component {
     
     decrement = () => {        
         if (this.state.count > 0) {
+            if (this.state.count == 1) {
+                this.setState({class: "red"});
+            }
             this.setState({count: this.state.count - 1});
             // console.log(this.state.count);
         }
         else {
             alert('Cannot be less than zero!');
-        }
+        };
     }
     
     render() {
         return (
             <div class="decrement">
                 
-                <p class="display">{this.state.count}</p>
+                <p class={this.state.class}>{this.state.count}</p>
 
                 <div class="button">
                     <button type="button" onClick={this.decrement}>Decrement</button>
                 </div>
-                
+
             </div>
         );
     }
