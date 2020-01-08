@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Decrement.css';
 
-
+// Decrement component class
 class Decrement extends Component {
 
     constructor(props) {
@@ -15,6 +15,8 @@ class Decrement extends Component {
         // this.decrement = this.decrement.bind(this);
     }
     
+    // decrement() method decrements the count state when the button is pressed
+    // raises an alert if the user attempts to decrement past 0
     decrement = () => {        
         if (this.state.count > 0) {
             if (this.state.count == 1) {
@@ -27,7 +29,8 @@ class Decrement extends Component {
             alert('The counter cannot be less than zero!');
         };
     }
-    
+
+    // render() method for the Decrement component class
     render() {
         return (
             <div class="decrement">
@@ -43,7 +46,7 @@ class Decrement extends Component {
     }
 };
 
-
+// Decrement propTypes
 Decrement.propTypes = {
     count: PropTypes.number.isRequired
 };

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './ContactCard.css';
 
+// ContactCard component class
 class ContactCard extends Component {
 
     constructor(props) {
         super();
     }
     
+    // render() method for the ContactCard component class
     render() {
         return (<div id="card">
             <p class="info"><strong>Name: </strong>{this.props.fullname}</p>
@@ -18,6 +20,7 @@ class ContactCard extends Component {
     }
 };
 
+// ContactCard propTypes
 ContactCard.propTypes = {
     fullname:PropTypes.string.isRequired,
     mobile:PropTypes.string.isRequired,
@@ -25,6 +28,7 @@ ContactCard.propTypes = {
     email:PropTypes.string.isRequired
 };
 
+// ContactList component class that holds three ContactCard components
 class ContactList extends Component {
 
     constructor(props) {
