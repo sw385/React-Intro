@@ -9,12 +9,17 @@ class ContactCard extends Component {
     }
     
     render() {
-        return <div id="card"><h3>Name: {this.props.firstname}</h3><h3>Mobile number: {this.props.mobile}</h3>Work number: {this.props.work}<h3>Email: {this.props.email}</h3></div>
+        return (<div id="card">
+            <p class="info"><strong>Name: </strong>{this.props.fullname}</p>
+            <p class="info"><strong>Mobile number: </strong>{this.props.mobile}</p>
+            <p class="info"><strong>Work number: </strong>{this.props.work}</p>
+            <p class="info"><strong>Email: </strong>{this.props.email}</p>
+            </div>);
     }
 };
 
 ContactCard.propTypes = {
-    firstname:PropTypes.string.isRequired,
+    fullname:PropTypes.string.isRequired,
     mobile:PropTypes.string.isRequired,
     work:PropTypes.string,
     email:PropTypes.string.isRequired
@@ -29,9 +34,9 @@ class ContactList extends Component {
     render() {
         return (
             <div>
-                <div class="card"><ContactCard firstname="Bobert" mobile="(123) 456-7890" work="(098) 765-4321" email="bobert@bob.com" /></div>
-                <div class="card"><ContactCard firstname="Juice" mobile="(123) 456-7890" email="juice@bob.com" /></div>
-                <div class="card"><ContactCard firstname="Shirley" mobile="(123) 456-7890" work="(098) 765-4321" email="shirley@bob.com" /></div>
+                <div class="card"><ContactCard fullname="Isaac Newton" mobile="(908) 630-7466" work="(613) 247-5041" email="isaac87@gmail.com" /></div>
+                <div class="card"><ContactCard fullname="Olivia Newton-John" mobile="(408) 402-5606" email="olivia81@outlook.com" /></div>
+                <div class="card"><ContactCard fullname="Juice Newton" mobile="(489) 508-9315" work="(914) 584-0188" email="juice81@protonmail.com" /></div>
             </div>
         );
     }

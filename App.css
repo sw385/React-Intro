@@ -29,8 +29,7 @@ div#left {
   width: 50%;
   float: left;
   height: 100%;
-  background-color: #b3d9ff;
-  z-index: 1010101010
+  background-color: #b3ff99;
 }
 
 div#right {
@@ -38,10 +37,8 @@ div#right {
   width: 50%;
   float: left;
   height: 100%;
-  background-color: #ffcc99;
-  z-index: 1010101010
 }
 
 body {
-  background-color: #ffcc99;
+  background-color: #9999ff;
 }

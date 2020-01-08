@@ -24,7 +24,7 @@ class Decrement extends Component {
             // console.log(this.state.count);
         }
         else {
-            alert('Cannot be less than zero!');
+            alert('The counter cannot be less than zero!');
         };
     }
     
