@@ -4,4 +4,4 @@ This repository contains the src files for both exercises "Contact Cards" and "D
 
 The components for both exercises are rendered together in a single App.
 
-![Screenshot](screenshot.jpg)
+![Screenshot](https://raw.githubusercontent.com/sw385/React-Intro/master/screenshot.png)
