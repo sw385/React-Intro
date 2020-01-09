@@ -30,12 +30,22 @@ class Decrement extends Component {
         };
     }
 
+    // increment() method increments the count state when the button is pressed
+    increment = () => {        
+        this.setState({class: "black"});
+        this.setState({count: this.state.count + 1});
+    }
+
     // render() method for the Decrement component class
     render() {
         return (
             <div class="decrement">
                 
                 <p class={this.state.class}>{this.state.count}</p>
+
+                <div class="button">
+                    <button type="button" onClick={this.increment}>Increment</button>
+                </div>
 
                 <div class="button">
                     <button type="button" onClick={this.decrement}>Decrement</button>
